@@ -76,6 +76,7 @@ body{
 .menu_list ul{
     display: flex;
     justify-content: center;
+
 }
 .menu_list ul li {
     display: inline;
@@ -101,12 +102,14 @@ body{
     height: 18px;
     margin-top: 10px;
     margin-right: 10px;
+
 }
 .burger span{
     height: 2px;
     width: 80%;
     transform: scale(1);
     background-color: rgb(3, 3, 3);
+
 }
 
 
@@ -129,6 +132,7 @@ body{
 
 .burger.active span {
     transform: scale(0);
+
 }
 .burger.active::before{
     top: 50%;
@@ -152,6 +156,7 @@ h2{
 .burger.active::after{
     top: 50%;
     transform: rotate(45deg) translate(0, 50%);
+    transition: all 1s;
 }
 .splash_screen{
     width: 100%;
@@ -170,7 +175,6 @@ h2{
     color: #fff;
 }
 span{
-    color: rgb(0, 0, 0);
     font-weight: 600;
 }
 .photo_david{
@@ -197,6 +201,9 @@ span{
     margin: 30px ;
     border-bottom: 1px solid rgba(0, 0, 0, 0.552);
 }
+h3{
+    text-align: center;
+}
 .photo_aesthetics{
     width: 55.5%;
     display: flex;
@@ -216,6 +223,7 @@ span{
     margin-top: 10px;
     color: grey;
     text-align: center;
+    margin-bottom: 15px;
 }
 @media (max-width: 550px){
     .photo_david{
@@ -223,6 +231,7 @@ span{
     }
     .burger{
         display: flex;
+        transition: all 1s;
     }
     .verses{
         display: flex;
@@ -258,6 +267,7 @@ span{
         overflow-y: auto;
         /* padding: 50px 40px; */
         background-color: rgb(165, 165, 165);
+        transition: all 1s;
 
     }
     .photo_logo img{
@@ -268,6 +278,7 @@ span{
         flex-direction: column;
         row-gap: 30px;
         margin-right: 170px;
+        transition: all 1s;
     }
     .menu_list ul li{
         display: flex;
@@ -292,4 +303,5 @@ span{
         height: 100%;
         display: block;
     }
+    
 }
