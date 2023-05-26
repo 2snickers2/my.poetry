@@ -140,14 +140,35 @@ input:checked+.slider:before {
     align-items: center;
     margin-left: 2vh;
 }
-
-.icons img {
-    width: 17px;
-    height: 17px;
+.icons_telegram{
+    width: 21px;
+    height: 21px;
+    background-image: url(photo/telegram.png);
+}
+.icons_spotify{
+    width: 20px;
+    height: 20px;
+    background-image: url(photo/spotify.png);
+}
+.icons_instagram{
+    width: 20px;
+    height: 20px;
+    background-image: url(photo/instagram.png);
+}
+a .icons {
+    width: 23px;
+    height: 21px;
+    font-size: 21px;
     align-items: center;
     border-radius: 0;
     margin-right: 3px;
 }
+
+/* .icons_telegram{
+    width: 17px;
+    height: 17px;
+    background-image: url(telegram.png);
+} */
 
 .menu_list ul {
     display: flex;
