@@ -72,6 +72,60 @@
                 <img src="photo/david-mobile.jpg" alt="">
             </div>
         </div>
+        <div class="verses ">
+            <div class="photo_aesthetics">
+                <img src="photo/sad.jpg" alt="">
+            </div>
+            <div class="verse">
+                <h3>Я устал тебя ненавидеть
+                    <br>
+                    <span>New</span>
+                </h3>
+               
+                <br>
+                Я устал тебя ненавидеть,
+                <br>
+                Устал в ненависти содрагать,
+                <br>
+                Так устал гордо держаться.
+                <br>
+                Устал все отрицать. 
+                <br>
+                <br>
+
+                Я так устал тебя ненавидеть, 
+                <br>
+                И взглядом все презирать.
+                <br>
+                Устал гневно смеяться, 
+                <br>
+                Устал по ночам загоняться.
+                <br>
+                <br>
+
+                Я устал ненавидеть себя,
+                <br>
+                Устал себе сопротивляться,
+                <br>
+                Устал так любить тебя,
+                <br>
+                Но никому не признаваться. 
+                <br>
+                <br>
+
+                И я уже устал издеваться, 
+                <br>
+                Пытаясь не раскрыть себя, 
+                <br>
+                Не перестаю удивляться, 
+                <br>
+                Как можно так притворяться?
+                <p>
+                   
+
+                </p>
+            </div>
+        </div>
         <div class="verses">
             <div class="photo_aesthetics">
                 <img src="photo/fa6621839a3ded113d279343545e8ee0.jpg" alt="">
@@ -130,7 +184,7 @@
                     Мы найдем спокойствие оба.
                     <br>
                     <br>
-                    Там, где слышно птиц пение,
+                    Там, где слышно, птиц пение
                     <br>
                     И твое сердцебиение.
                     <br>
@@ -341,53 +395,7 @@
                 </p>
             </div>
         </div>
-        <div class="verses ">
-            <div class="photo_aesthetics">
-                <img src="./photo/geroi.jpg" alt="">
-            </div>
-            <div class="verse">
-                <h3>Герои</h3>
-                <p>
-                    Ведь они так молоды были,
-                    <br>
-                    А сейчас лежат в могиле.
-                    <br>
-                    Они сильно любили,
-                    <br>
-                    Но их тела уже сгнили.
-                    <br>
-                    <br>
-
-                    Так сильно родину любили,
-                    <br>
-                    Но враги их погубили.
-                    <br>
-                    Они достойно боролись и давали отпор
-                    <br>
-                    Уж таков солдата приговор.
-                    <br>
-                    <br>
-
-                    Плачет мать, жена и дети
-                    <br>
-                    Не должно быть войны на свете.
-                    <br>
-                    Сын больше не вернется домой,
-                    <br>
-                    А его тело обретет покой.
-                    <br>
-                    <br>
-
-                    Безпощадна война,
-                    <br>
-                    И дочь больше не увидит отца.
-                    <br>
-                    Покойтесь с миром, наши герои,
-                    <br>
-                    Спасибо, что защищаете Украины территории
-                </p>
-            </div>
-        </div>
+        
         <div class="verses ">
             <div class="photo_aesthetics">
                 <img src="./photo/shout.jpg" alt="">
@@ -483,6 +491,7 @@
                 </p>
             </div>
         </div>
+      
         <div class="fotter">
             <p>Спасибо, всем, кто уделил немного времени моему творчеству</p>
         </div>
@@ -506,6 +515,28 @@
         }
        }
        
+       let logo = document.querySelector(".photo_logo img");
+let isEnlarged = false;
+
+logo.addEventListener('click', function(){
+    if (isEnlarged) {
+        logo.style.width = "50px";
+        logo.style.height = "50px";
+        logo.style.borderRadius = "";
+        logo.style.marginTop = "";
+    } else {
+
+        logo.style.width = "200px";
+        logo.style.height = "200px";
+        logo.style.borderRadius = "10px";
+        logo.style.marginTop = "150px";
+        logo.style.marginLeft = "100px";
+
+    }
+
+
+    isEnlarged = !isEnlarged;
+});
     </script>
 
 </body>
